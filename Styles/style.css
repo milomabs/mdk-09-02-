@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: futura PT;
+}
+
+@font-face {
+    font-family: "futura PT";
+    src: url("fonts/Futura/FuturaBookC.ttf") format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Оформление шапки */
+.glav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 140px;
+    height: 50px;
+    margin-left: 250px;
+    margin-top: 45px;
+}
+
+.logoop {
+    display: flex;
+    font-size: 20px;
+}
+
+.op {
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.opis {
+    display: block;
+
+}
+
+.op1 {
+    font-size: 15px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    margin-right: 250px;
+    margin-top: 70px;
+}
+
+header li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.burger {
+    display: none;
+    padding-left: 100px;
+}
+
+/* Оформление основного блока */
+video {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        padding-top: 50px;
+  }
+/* оформление раздела хиты недели и каталога */
+.pred {
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tovar1 {
+    width: 250px;
+}
+
+.img1 {
+    height: 350px;
+    width: 250px;
+}
+
+.t1op {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.btn1 {
+    height: 40px;
+    width: 100px;
+
+    border-radius: 3px;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000000;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+
+}
+
+.btn1:hover {
+    color: #ffffff;
+    background-color: rgb(192, 182, 245);
+
+}
+
+.knop {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hit {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+/* Оформление раздела о нас */
+.about {
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+
+/* Оформление раздела контакты */
+.adress {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.map {
+    width: 500px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+
+
+/* Оформление подвала */
+footer li {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+footer {
+    background-color: rgb(114, 114, 114);
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.glav2 {
+    display: flex;
+
+}
+
+.contacts {
+    margin-top: 50px;
+    line-height: 30px;
+    margin-right: 200px;
+}
+
+.contactimg {
+    gap: 20px;
+    display: flex;
+    margin-left: 30px;
+}
+
+/* адаптивный дизайн для планшетной версии */
+@media screen and (max-width: 1280px) {
+    footer {
+        display: flex;
+    }
+
+    footer ul {
+        display: inline;
+
+
+    }
+
+    .menufoot {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 50px;
+
+    }
+
+    footer li {
+        justify-content: center;
+        line-height: 25px;
+    }
+
+    .logo {
+        margin-left: 135px;
+    }
+
+    header ul {
+
+        margin-right: 140px;
+    }
+
+    .contacts {
+
+        margin-left: 50px;
+        line-height: 30px;
+    }
+}
+
+/* адаптивный дизайн для мобильной версии */
+@media screen and (max-width: 720px) {
+    footer {
+        display: flex;
+    }
+
+    footer ul {
+        display: inline;
+    }
+
+    .menufoot {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 50px;
+
+    }
+
+    footer li {
+        justify-content: center;
+        line-height: 25px;
+    }
+
+    .logo {
+        margin-left: 60px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        margin-left: 60px;
+        margin-top: 40px;
+    }
+
+    .contacts {
+
+        margin-left: 50px;
+        line-height: 30px;
+    }
+
+    .t2 {
+        display: none;
+    }
+
+    footer .opis {
+        display: none;
+    }
+
+    .contacts {
+        margin-left: 20px;
+    }
+}
